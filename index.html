@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario De Inscripción</title>
+	<link rel="shortcut icon" href="Registro_2.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	
+	<h1>Inscripciones Para El <br>Politécnico Sergio Augusto Beras</h1>
+
+	<h2>Datos Del Estudiante:</h2>
+
+	<form action="">
+		<label for="nombre">Nombre Completo:</label>
+		<input type="text" id="nombre">
+		<br><br>
+
+		<label for="nacimiento">Fecha de nacimiento:</label>
+		<input type="date" id="nacimiento">
+		<br><br>
+
+		<label for="telefono">Número de teléfono:</label>
+		<input type="tel" id="telefono">
+		<br><br>
+
+		<label for="correo">Correo Electrónico:</label>
+		<input type="email" id="correo">
+
+		<h3>Elige el técnico</h3>
+		<input type="radio">Informática
+		<input type="radio">Contabilidad
+		<input type="radio">Enfermería
+		<br><br>
+
+		<button onclick="guardar_datos()">Enviar</button>
+	</form>
+
+</body>
+</html>
