@@ -6,7 +6,6 @@
 	<title>Formulario De Inscripción</title>
 	<link rel="shortcut icon" href="Registro_2.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
-	<script src="index.js"></script>
 </head>
 <body>
 	
@@ -14,30 +13,29 @@
 
 	<h2>Datos Del Estudiante:</h2>
 
-	<form action="">
+	<form id="Formulario" action="http://localhost/Formulario_Inscripcion/Procesar_Formulario.php" method="POST">
 		<label for="nombre">Nombre Completo:</label>
-		<input type="text" id="nombre">
+		<input type="text" id="nombre" name="nombre">
 		<br><br>
 
 		<label for="nacimiento">Fecha de nacimiento:</label>
-		<input type="date" id="nacimiento">
+		<input type="date" id="nacimiento" name="nacimiento">
 		<br><br>
 
 		<label for="telefono">Número de teléfono:</label>
-		<input type="tel" id="telefono">
+		<input type="tel" id="telefono" name="telefono">
 		<br><br>
 
 		<label for="correo">Correo Electrónico:</label>
-		<input type="email" id="correo">
+		<input type="email" id="correo" name="correo">
 
 		<h3>Elige el técnico</h3>
-		<input type="radio">Informática
-		<input type="radio">Contabilidad
-		<input type="radio">Enfermería
+		<input type="radio" name="tecnico">Informática
+		<input type="radio" name="tecnico">Contabilidad
+		<input type="radio" name="tecnico">Enfermería
 		<br><br>
 
-		<button onclick="guardar_datos()">Enviar</button>
+		<button>Enviar</button>
 	</form>
-
 </body>
 </html>
